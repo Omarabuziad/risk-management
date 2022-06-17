@@ -37,6 +37,8 @@ function Item() {
       </div>
 
       <span className="percentage">
+      <p>النسبة</p>
+      
 
       </span>
 

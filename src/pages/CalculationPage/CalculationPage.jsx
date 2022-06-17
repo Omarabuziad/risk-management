@@ -1,6 +1,5 @@
 import React , {useState} from 'react';
 import "./style.css"
-
 import CustomerRisk from "../../components/CustomerRisk/CustomerRisk";
 import CountryRisk from "../../components/CountryRisk/CountryRisk";
 import ProductsAndCountries from "../../components/ProductsAndCountries/ProductsAndCountries";
@@ -30,15 +29,15 @@ function CalculationPage() {
      <nav>
       <ul className='category'>
         {navCategory.map((elem,i)=>{
-          return <li key={i} style={ i == navSelected ? {borderBottom : "3px solid black"} : null} onClick={()=>{navBarShow(i)}}>{elem}</li>
+          return <li key={i} style={ i === navSelected ? {borderBottom : "3px solid black"} : null} onClick={()=>{navBarShow(i)}}>{elem}</li>
         })}
       </ul>
      </nav>
 
-     {navSelected == 3 ? <CustomerRisk /> : null}
-     {navSelected == 2 ? <CountryRisk /> : null}
-     {navSelected == 1 ? <ProductsAndCountries /> : null}
-     {navSelected == 0 ? <ServiceChannels /> : null}
+     {navSelected === 3 ? <CustomerRisk /> : null}
+     {navSelected === 2 ? <CountryRisk /> : null}
+     {navSelected === 1 ? <ProductsAndCountries /> : null}
+     {navSelected === 0 ? <ServiceChannels /> : null}
     </div>
   )
 }

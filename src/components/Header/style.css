@@ -1,0 +1,27 @@
+.mainHeader {
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    padding:  30px 20px;
+    border-bottom: 1px solid rgb(139, 139, 138);
+}
+
+.mainHeader > nav {
+}
+
+.mainHeader > nav > .category {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.mainHeader > nav > .category > li > a {
+  text-decoration: none;
+  padding: 10px;
+  /* border-bottom: 3px solid black; */
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: black;
+}
